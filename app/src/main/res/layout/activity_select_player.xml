@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/masterLayout">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="top" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_height="99dp" />
+    <!--<TextView
+        android:layout_height="55dp"
+        android:id="@+id/yellowCircle"
+        android:layout_gravity="bottom|left"
+        android:baselineAlignBottom="false"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/yellowcircle"
+        android:layout_width="55dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/txtTriangle"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/redtriangle"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_gravity="bottom|right"
+        android:id="@+id/blueSquare"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bluesquare"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="515dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playerListView" />
+    </LinearLayout>
+
+</FrameLayout>

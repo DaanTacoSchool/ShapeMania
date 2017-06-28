@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="trdaan.shapemania.GameActivity"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <!--<trdaan.shapemania.game_helper_classes.LevelSurfaceView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="12"-->
+        <!--android:id="@+id/LevelSurfaceView" />-->
+
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="137dp"-->
+        <!--class="trdaan.shapemania.game_helper_classes.LevelSurfaceView"-->
+        <!--android:id="@+id/theSurfaceView"-->
+        <!--android:visibility="gone" />-->
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surfaceView2"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+
+    </SurfaceView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="time"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRemainingTime"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:foregroundTint="@android:color/holo_blue_bright"
+            android:textColor="@android:color/holo_purple"
+            android:fontFamily="casual" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCurrLvl"
+            android:layout_weight="0.17"
+            tools:text="lvl"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_purple"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:fontFamily="casual" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTarget"
+            android:layout_weight="0.68"
+            android:textStyle="normal|bold"
+            tools:text="target"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_purple"
+            android:textAlignment="center"
+            android:fontFamily="casual" />
+
+        <TextView
+            android:text="score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtScore"
+            android:layout_weight="0.21"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="casual" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="194dp"
+        android:id="@+id/txtCountDownTillStart"
+        android:layout_gravity="center"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_purple"
+        tools:text="countdown and target"
+        android:fontFamily="casual" />
+
+</FrameLayout>

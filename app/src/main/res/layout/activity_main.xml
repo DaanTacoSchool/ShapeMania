@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="trdaan.shapemania.MainActivity"
+    android:orientation="vertical">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shapechange"
+        android:layout_weight="1"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:paddingBottom="-10dp"
+        android:layout_marginBottom="-45dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        <Button
+            android:text="Highscores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHighscores"
+            android:background="?android:attr/colorPressedHighlight"
+            android:textColor="@android:color/white"
+            tools:alpha="0.75"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textStyle="normal|bold"
+            android:textColorHighlight="@android:color/background_light"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="Play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoToGameMenu"
+            android:background="?android:attr/colorPressedHighlight"
+            android:textColor="@android:color/white"
+            tools:alpha="0.75"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textStyle="normal|bold"
+            android:textColorHighlight="@android:color/background_light" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="0.92" />
+
+        <Button
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoToSettings"
+            android:onClick=""
+            android:background="?android:attr/colorPressedHighlight"
+            android:textColor="@android:color/white"
+            tools:alpha="0.75"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textStyle="normal|bold"
+            android:textColorHighlight="@android:color/background_light" />
+
+    </LinearLayout>
+
+</FrameLayout>

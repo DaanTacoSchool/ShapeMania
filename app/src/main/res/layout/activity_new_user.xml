@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/masterLayout">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="-25dp" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <EditText android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+        <Button
+            android:text="Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConfirm"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-25dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp" />
+
+    <TextView
+        android:text="New User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHeader"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="-50dp" />
+
+</FrameLayout>

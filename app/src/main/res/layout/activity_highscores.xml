@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/masterLayout">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="top" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_height="99dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="464dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewHighscores" />
+    </LinearLayout>
+
+</FrameLayout>

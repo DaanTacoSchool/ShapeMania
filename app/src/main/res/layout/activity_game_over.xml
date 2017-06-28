@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/masterLayout">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:background="@drawable/grid"
+        android:layout_weight="1"
+        android:layout_marginRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:paddingBottom="-10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-25dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLevelFailed"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            tools:text="Level Failed..."
+            android:textSize="24sp"
+            android:text="Level Failed..."
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <pl.droidsonroids.gif.GifTextView
+                android:layout_width="124dp"
+                android:background="@drawable/sad"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="157dp"
+                android:layout_weight="0.61" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtFadeInScore"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_height="wrap_content"
+            tools:text="fade in score"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:background="@android:color/holo_red_light"
+
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:text="Back to menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBackToMain"
+            android:background="@android:color/holo_purple"
+
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</FrameLayout>
